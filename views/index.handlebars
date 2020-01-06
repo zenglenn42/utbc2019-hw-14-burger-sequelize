@@ -1,0 +1,34 @@
+<div id="body-wrapper">
+  <header>Burger Buddy</header>
+  <main>
+    <div class="create-div">
+      <h2>So many burgers, so little time.</h2>
+      <hr>
+      <form>
+        <p>Describe a burger you'd like to eat.</p>
+        <input type="text" id="new-burger" name="new-burger" placeholder="description" required></input>
+        <button type="submit" id="submit-burger">Add</button>
+      </form>
+      <hr>
+    <div class="left-right-div">
+      <div class="left-div">
+        To Devour
+        {{#each toDevour}}
+          <form id="devour" class="burgerlist">
+            <input type="text" disabled value="{{this.burger}}"></input>
+            <button data-id="{{this.id}}" class="devour-button" type="submit">Eat</button>
+          </form>
+        {{/each}}
+      </div>
+      <div class="right-div">
+        Devoured
+        {{#each devoured}}
+        <form id="devour" class="burgerlist">
+          <input id="devoured" type="text" disabled value="{{this.burger}}"></input>
+        </form>
+        {{/each}}
+      </div>
+    </div>
+  </main>
+  <footer>Copyright &copy; 2019 Burger Hegemony</footer>
+</div>

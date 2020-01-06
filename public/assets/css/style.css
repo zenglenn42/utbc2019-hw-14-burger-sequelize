@@ -1,0 +1,85 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+#body-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    height: 1em;
+    background-color: #0060df;
+    color: white;
+    padding: 0.5em;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    height: 1em;
+    background-color: #999;
+    color: black;
+    padding: 0.5em;
+    font-size: 75%;
+}
+
+.create-div {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.left-right-div {
+    display: flex;
+    flex-direction: row;
+    min-width: 100vw;
+    justify-content: space-around;
+}
+
+.left-div,
+.right-div {
+    background-color: lightgray;
+    min-width: 48%;
+    max-width: 48%;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    padding-bottom: 1em;
+    padding-top: 0.25em;
+    border-radius: 0.25em;
+}
+
+input[type="text"] {
+    overflow: scroll;
+    font-size: 125%;
+    flex: 1;
+}
+
+input[id="devoured"] {
+    min-width: 100%;
+    overflow: scroll;
+    font-size: 125%;
+}
+
+button {
+    /* Courtesy CSS Secrets :-) */
+    padding: .2em .6em;
+    border: 1px solid rgba(0,0,0,.1);
+    background: #0060df linear-gradient(hsla(0,0%,100%,.2), transparent);
+    border-radius: .2em;
+    box-shadow: 0 .05em .25em rgba(0,0,0,.5);
+    color: white;
+    text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
+    font-size: 125%;
+    line-height: 1.5;
+}
+
+form[class="burgerlist"] {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+}
