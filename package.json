@@ -13,7 +13,7 @@
     "express-handlebars": "^3.0.0",
     "mysql": "^2.12.0",
     "mysql2": "^2.1.0",
-    "sequelize": "^4.41.2"
+    "sequelize": "^5.15.1"
   },
   "devDependencies": {
     "handlebars-helper-css": "^0.1.0"
